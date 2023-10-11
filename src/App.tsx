@@ -54,7 +54,7 @@ function App() {
   return (
     <>
       <h1 style={{ textAlign: "center", fontFamily: 'Rubik', fontSize: "5rem", textShadow: "5px 5px #333" }}>Markdown Previewer</h1>
-      <div class="containers">
+      <div className="containers">
         <textarea name="editfield" id="editor" value={markDownText} onChange={(event) => { return setMarkDownText(event.target.value); } }></textarea>
         <div id="preview">
           <ReactMarkdown>{markDownText}</ReactMarkdown>
